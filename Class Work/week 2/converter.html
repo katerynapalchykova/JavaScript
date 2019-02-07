@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <title> My Simple Calculator</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <style>
+   </style>
+</head>
+
+<body>
+   <input id="input1" type="number" value="5" /></input>
+   <input id="input2" type="number" value="10" /><input>
+   <input id="input3" type="number" value="15" /><input>
+
+   <script>
+      let convert;
+      let seconds;
+      // DD = (Seconds/3600) + (Minutes/60) + Degrees
+      function convert(num1, num2, num3) {
+         const num1 = document.getElementById('input1').value;
+         const num2 = document.getElementById('input2').value;
+         const num3 = document.getElementById('input3').value;
+         var result = (num1 / 3600) + (num2 / 60) + num3; //#endregion
+         return result;
+      }
+   </script>
+</body>
+
+</html>

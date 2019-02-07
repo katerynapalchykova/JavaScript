@@ -1,0 +1,13 @@
+div#cutter {
+    overflow: hidden;
+    position: fixed;
+}
+
+#cutter img {
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+
+}

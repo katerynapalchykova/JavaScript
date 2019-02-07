@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title> Fun title here</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <input id="inputBox" type="text" /></input>
+    <button onclick="getInput()">Click</button>
+    <div id="output"> </div>
+    <script>
+        function getInput() {
+            const myInput = document.getElementById('input');
+            console.log(myInput);
+        }
+        const myOutput = document.getElementById('output');
+        if (myInput.value != NaN) {
+            myOutput.innerHTML = sum(myInput.value);
+        }
+
+        function sum(max) {
+            let total = 0;
+            for (let i = 0; i <= max; i++) {
+                total += i;
+            }
+            return total;
+        }
+    </script>
+</body>
+
+</html>

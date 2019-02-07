@@ -1,0 +1,38 @@
+// Rewrite everything
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title> My Simple Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="simpleCalcBody">
+        <div>
+            <input id="input1" type="number" value="5" /></input>
+            <input id="input2" type="number" value="5" /><input>
+        </div>
+        <button id="plauButton" onclick="add()">+</button>
+
+        <p>Result: <span id="result"></span> </p>
+
+    </div>
+    <script>
+        function add() {
+            const num1 = document.getElementById('input1').value;
+            const num2 = document.getElementById('input2').value;
+            const resultBox = document.getElementById('result');
+
+            resultBox.innerHTML = parsefloat(num1) + parsfloat(num2);
+        }
+
+        function add2(num1, num2) {
+            return parsefloat(num1) + parsfloat(num2);
+        }
+        const add3 = (num1, num2) => parseFloat(num1) + parsfloat(num2);
+    </script>
+</body>
+
+</html>

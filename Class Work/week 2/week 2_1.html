@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title> Fun title here</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <input id="inputBox" type="text" /></input>
+  <button onclick="getInput()">Click</button>
+  <div id="output"> </div>
+  <script>
+    function getInput() {
+      const myInput = document.getElementById('input');
+      console.log(myInput);
+    }
+    const myOutput = document.getElementById('output');
+    if (myInput.value != NaN) {
+      myOutput.innerHTML = sum(myInput.value);
+    }
+
+    function sum(max) {
+      let total = 0;
+      for (let i = 0; i <= max; i++) {
+        total += i;
+      }
+      return total;
+    }
+    //  function rewrite below 
+    //  function expression 
+    const sum = function (max) {
+
+      let total = 0;
+      for (let i = 0; i <= max; i++) {
+        total += i;
+      }
+      return total;
+    }
+
+    //example -> always going to give a sum of five numbers 
+    const sum5 = sum(5);
+
+
+    // arrow function 
+    const add = (num1, num2) => {
+
+      return num1 + num2;
+    }
+    //If you are only returning something in one function 
+    const add = (num1, num2) => num1 + num2;
+    add(1, 2);
+  </script>
+</body>
+
+</html>
+
+<!--  1. function expression; don't use 'var' to declare a variable 
+    use 'let' or 'const'; 'let' stays in the cope where it was declared
+    const can change in ECMAScript, rebinding vs changing 
+const myfunction = 5 -> can't be changed
+const myfunction = []  -->
+
+<!-- 2. arrow function 
+const sumArrow = (max) => {
+    
+} -->
