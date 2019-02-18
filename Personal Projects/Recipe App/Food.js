@@ -27,5 +27,8 @@ let recipeList = [
 
 ];
 
+// var obj = JSON.parse(recipeList);
 
- 
+
+document.getElementById('output');
+output.innerHTML = recipeList.title;
