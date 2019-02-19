@@ -27,8 +27,13 @@ let recipeList = [
 
 ];
 
+
+// stack on this part 
+var obj = JSON.parse(recipeList);
+obj[1];
+
+
+
 // var obj = JSON.parse(recipeList);
-
-
-document.getElementById('output');
-output.innerHTML = recipeList.title;
+// document.getElementById('output');
+// output.innerHTML = recipeList.title[1];
