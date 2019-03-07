@@ -1,0 +1,93 @@
+<div class="content">
+    <div class="red" ></div>
+    <div class="green" ></div>
+    <div class="yellow" ></div>
+    <div class="blue" ></div>
+  </div>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.content {
+  width: 80%;
+  height: 500px;
+  border: 1px solid;
+ 
+}
+
+.red {
+width: 100px;
+height: 100px;
+background-color: red; 
+transition: width 2s ease-in;
+  position: relative;
+  background-color: red;
+  animation-name: rotate;
+  animation-duration: 8s;
+  animation-iteration-count: 2; 
+}
+.big-move {
+  width: 200px; 
+  height: 200px; 
+  transform: translatey(300px);
+}
+
+.red:hover {
+  width: 200px; 
+  height: 200px;
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+@keyframes rotate {
+  0%   {}
+  25%  {
+    transform: translatex(400px);
+  }
+  50% {
+    transform: translatey(300px)
+    translatey(300px);
+  }
+  75% {
+    transform: translatex(0)
+    translatey(300px);
+  }
+  100% {
+  }
+}
+  
+  
+.green {
+width: 100px;
+height: 100px;
+background-color: green;
+ 
+}
+.yellow {
+width: 100px;
+height: 100px;
+background-color: gold;
+
+}
+.blue {
+width: 100px;
+height: 100px;
+background-color: blue;
+
+}
+</style>
+<script>
+    const red = document.querySelector('.red');
+red.addEventListener('click', (e) => {
+e.target.classList.toggle('big-move');
+})
+</script>  
+  
