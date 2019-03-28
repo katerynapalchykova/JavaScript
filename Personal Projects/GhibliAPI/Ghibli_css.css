@@ -19,8 +19,8 @@ html {
 h1 {
   text-align: center;
   padding: 1.5rem 2.5rem;
-  background-image: linear-gradient(120deg, 
-  #654ea3, #eaafc8 100%);
+  background-image: linear-gradient(120deg,
+    #654ea3, #eaafc8 100%);
   margin: 0 0 2rem 0;
   font-size: 1.5rem;
   color: white;
@@ -29,7 +29,7 @@ h1 {
 img {
   display: block;
   margin: 1rem auto;
-  max-width:  93%;
+  max-width: 93%;
 }
 
 p {

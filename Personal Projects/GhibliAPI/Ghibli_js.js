@@ -1,4 +1,6 @@
-import {picList} from './pic_list.js';
+import {
+  picList
+} from './pic_list.js';
 
 const app = document.getElementById('root');
 
@@ -36,21 +38,18 @@ getJSON('https://ghibliapi.herokuapp.com/people').then(data => {
     const h1 = document.createElement('h1');
     h1.textContent = human.name;
     const showImage = findPicture(human.name);
-  
-
 
     const p = document.createElement('p');
     human.description = human.gender.substring(0, 300);
     p.textContent = `Gender: ${human.gender}, Age: ${human.age}.`;
-    
 
     container.appendChild(card);
     card.appendChild(h1);
     card.appendChild(p);
-   
+
     if (showImage) {
       const img = document.createElement('img');
-      img.src = showImage.picture; 
+      img.src = showImage.picture;
       card.appendChild(img);
     }
   })
