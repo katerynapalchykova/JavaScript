@@ -29,7 +29,7 @@ h1 {
 img {
   display: block;
   margin: 1rem auto;
-  max-width: 100%;
+  max-width:  93%;
 }
 
 p {
@@ -45,7 +45,7 @@ p {
 .card {
   margin: 1rem;
   background: white;
-  box-shadow: 2px 4px 25px rgba(0, 0, 0, .1);
+  /* box-shadow: 2px 4px 25px rgba(0, 0, 0, .1); */
   border-radius: 12px;
   overflow: hidden;
   transition: all .2s linear;
