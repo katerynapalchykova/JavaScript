@@ -1,29 +1,7 @@
-
-
-let recipeList = [
-    {title: ["Chocolate Cake"],
-    picture: ["Food_images/choc.jpg"],
-    subtitle: ["Click for details"]},
-
-    {title: ["Chocolate Cake"],
-    picture: ["Food_images/choc.jpg"],
-    subtitle: ["Click for details"]},
-
-    {title: ["Chocolate Cake"],
-    picture: ["Food_images/choc.jpg"],
-    subtitle: ["Click for details"]},
-
-    {title: ["Chocolate Cake"],
-    picture: ["Food_images/choc.jpg"],
-    subtitle: ["Click for details"]},
-
-    {title: ["Chocolate Cake"],
-    picture: ["Food_images/choc.jpg"],
-    subtitle: ["Click for details"]},
-];
-
-
-// stack on this part 
+import {
+    food_list
+  } from 'food_list.js';
+ 
 var obj = JSON.parse(recipeList);
 obj[1];
 
@@ -39,9 +17,3 @@ listElement.forEach(element) => {
     listElement.appendChild(listElement);
 }
 };
-
-
-
-// var obj = JSON.parse(recipeList);
-// document.getElementById('output');
-// output.innerHTML = recipeList.title[1];

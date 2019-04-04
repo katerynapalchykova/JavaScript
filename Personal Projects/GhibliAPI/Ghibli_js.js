@@ -60,3 +60,25 @@ function findPicture(name) {
     return item.id === name;
   })
 }
+/*
+// When the user scrolls down 60px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
+    document.getElementById("goUP").style.display = "block";
+  } else {
+    document.getElementById("goUP").style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.documentElement.scrollTop = 0;
+}
+
+function goUpFunction() {
+ const button = document.createElement('goUP');
+ button = document.documentElement.scrollTop = 0;
+ button.appendChild('goUP');
+  
+} */ 
