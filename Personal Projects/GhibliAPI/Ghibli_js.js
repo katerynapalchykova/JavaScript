@@ -60,12 +60,12 @@ function findPicture(name) {
     return item.id === name;
   })
 }
-/*
-// When the user scrolls down 60px from the top of the document, show the button
+
+// When the user scrolls down 50px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     document.getElementById("goUP").style.display = "block";
   } else {
     document.getElementById("goUP").style.display = "none";
@@ -81,4 +81,4 @@ function goUpFunction() {
  button = document.documentElement.scrollTop = 0;
  button.appendChild('goUP');
   
-} */ 
+} 

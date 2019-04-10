@@ -2,28 +2,26 @@
   box-sizing: border-box
 }
 
-html {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-family: 'Dosis', sans-serif;
-  line-height: 1.6;
-  color: #666;
-  background: rgb(32, 32, 32);
-}
 
 #root {
   max-width: 1200px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 h1 {
   text-align: center;
   padding: 1.5rem 2.5rem;
-  background-image: linear-gradient(120deg,
-    #654ea3, #eaafc8 100%);
   margin: 0 0 2rem 0;
   font-size: 1.5rem;
-  color: white;
+  color: black;
+}
+
+html {
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+  font-family: 'Roboto Slab', sans-serif;
+  background: #b3a3de;
+  line-height: 1.5;
 }
 
 img {
@@ -33,7 +31,7 @@ img {
 }
 
 p {
-  padding: 0 2.5rem 2.5rem;
+  padding: 0 2.4rem 2.0rem;
   margin: 0;
 }
 
@@ -49,49 +47,24 @@ p {
   overflow: hidden;
   transition: all .2s linear;
 }
- /* Scroll Up bitton */ 
+
+/* Scroll Up button */
 #goUP {
   display: none;
-  position: fixed; 
-  bottom: 20px; 
-  right: 50px; 
-  z-index: 99; 
-  border: none; 
+  position: fixed;
+  bottom: 20px;
+  right: 100px;
+  z-index: 99;
+  border: none;
   outline: none;
-  background-color: pink ;
+  background-color: pink;
   color: white;
-  padding: 15px; 
-  border-radius: 15px; 
-  font-size: 18px; 
+  padding: 56px;
+  border-radius: 15px;
+  font-size: 18px;
 }
 
 #goUP:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
+  background-color: #555;
 }
 
-/* The end of scroll up button */ 
-
-@media screen and (min-width: 600px) {
-  .box {
-    flex: 1 1 calc(50% - 2rem);
-  }
-}
-
-@media screen and (min-width: 900px) {
-  .box {
-    flex: 1 1 calc(33% - 2rem);
-  }
-}
-
-/* gradient colors */ 
-.box:nth-child(2n) h1 {
-  background-image: linear-gradient(120deg, #12c2e9 0%, #f64f59 100%);
-}
-
-.box:nth-child(4n) h1 {
-  background-image: linear-gradient(120deg, #FC466B 0%, #3f5efb 100%);
-}
-
-.box:nth-child(5n) h1 {
-  background-image: linear-gradient(120deg, #00F260 0%, #0575E6 100%);
-}
